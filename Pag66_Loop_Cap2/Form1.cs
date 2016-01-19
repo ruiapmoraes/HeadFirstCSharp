@@ -69,7 +69,69 @@ namespace Pag66_Loop_Cap2
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Loop 1
+            int count = 5;
+            while (count > 0)
+            {
+                count = count * 3;
+                count = count * -1;
+            }
+            MessageBox.Show("O valor de count é " + count);
+        }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //Loop 2
+            int i = 0;
+            int count = 2;
+            while (i == 0)
+            {
+                count = count * 3;
+                count = count * -1;
+            }
+            MessageBox.Show("o valor de count é " + count);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //Loop 3
+            int j = 2;
+            for (int i = 0; i < 100; i = i * 2)
+            {
+                j = j - 1;
+                while (j < 25)
+                {
+                    j = j + 5;
+                }
+            }
+            MessageBox.Show("O valor de j é" + j);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //Loop 4
+            int valor = 0;
+            while (true)
+            {
+                int i = 1;
+                valor = i;
+            }
+            MessageBox.Show("O valor é " + valor);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //Loop 5
+            int p = 2;
+            for (int q = 0; q < 32; q = q * 2)
+            {
+                while (p < q)
+                {
+                    p = p * 2;
+                }
+                q = p - q;
+            }
+            MessageBox.Show("o valor de q é " + p);
         }
     }
 }
